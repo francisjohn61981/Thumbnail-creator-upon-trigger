@@ -9,7 +9,7 @@ gcloud storage buckets create gs://$BUCKET_NAME \
 ```
 gcloud pubsub topics create my-topic
 ```
-### before creating the cloud run functions, use the following command to check the supported runtime
+### Before creating the cloud run functions, use the following command to check the supported runtime
 ```
 gcloud functions runtimes list
 ```
@@ -43,7 +43,6 @@ gcloud projects add-iam-policy-binding $PROJECT_ID \
 gcloud projects add-iam-policy-binding $PROJECT_ID \
   --member="serviceAccount:$StorageServiceAccount" \
   --role="roles/pubsub.publisher"
-
 ```
 ### Create the Eventarc trigger
 ```
